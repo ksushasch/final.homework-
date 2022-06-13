@@ -1,0 +1,50 @@
+header {
+    width: 100%;
+    background-color: #181818;
+    padding: 0 120px;
+
+    .header_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .header_content > svg {
+        margin: 30px 0;
+    }
+
+    .header_content_link {
+        margin: 35px 0;
+
+        a {
+            text-decoration: none;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+            color: #FFF
+        }
+
+        button {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000;
+            letter-spacing: 0.4px;
+            background-color: #FFF;
+            border: none;
+            border-radius: 14px;
+            padding: 9px 20px 13px;
+            cursor: pointer;
+        }
+
+    }
+
+    .header_content_link > a {
+        margin-right: 32px;
+    }
+
+}
