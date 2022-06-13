@@ -1,0 +1,14 @@
+{
+  "name": "ksusha",
+  "source": "index.html",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "dependencies": {
+    "parcel": "^2.6.0"
+  }
+}
