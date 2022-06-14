@@ -5,9 +5,10 @@
 }
 
 body {
-    max-width: calc(1440px + 32px * 2);
+    width: calc(1440px + 32px * 2);
     margin: 0 auto;
 }
 
 @import url(./header.scss);
 @import url(./banner_studio.scss);
+@import url(./we_doing.scss);

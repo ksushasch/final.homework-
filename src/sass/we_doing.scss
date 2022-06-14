@@ -1,0 +1,121 @@
+.we_doing {
+    width: 100%;
+    padding: 113px 120px 100px;
+    background-color: #000000;
+
+    .we_doing_title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 42px;
+        text-align: center;
+        color: #FFF;
+        margin-bottom: 15px;
+    }
+
+    .we_doing_subtitle {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 30px;
+        text-align: center;
+        color: #C0C0C0;
+        margin-bottom: 42px
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .we_doing_container {
+        display: grid;
+        grid-template-areas:
+        "product architecture"
+        "drone wildlife";
+        gap: 16px;
+    }
+
+}
+
+.we_doing_container_product {
+    background-image: url(/src/assets/images/list1.png);
+    width: 576px;
+    height: 600px;
+    grid-area: product;
+    padding: 420px 45px 30px 30px;
+}
+
+.we_doing_container_architecture {
+    background-image: url(/src/assets/images/list2.png);
+    width: 576px;
+    height: 600px;
+    grid-area: architecture;
+    padding: 420px 45px 30px 30px;
+}
+
+.we_doing_container_drone {
+    background-image: url(/src/assets/images/list3.png);
+    width: 576px;
+    height: 600px;
+    grid-area: drone;
+    padding: 420px 45px 30px 30px;
+}
+
+.we_doing_container_wildlife {
+    background-image: url(/src/assets/images/list4.png);
+    width: 576px;
+    height: 600px;
+    grid-area: wildlife;
+    padding: 420px 45px 30px 30px;
+}
+
+.we_doing_container_description {
+    display: flex;
+    flex-direction: column;
+}
+
+.we_doing_container_description > h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.we_doing_container_description > p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+    margin-bottom: 10px;
+}
+
+.we_doing_container_description > button {
+    width: 143px;
+    background-color: #FFF;
+    border-radius: 14px;
+    padding: 5px 10px 5px 4px;
+    border: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button > svg {
+    margin-right: 5px;
+}
