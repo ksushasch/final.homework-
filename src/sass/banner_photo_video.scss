@@ -1,0 +1,47 @@
+.banner_photo_video {
+    width: 100%;
+    padding: 120px 120px 100px;
+    background-color: #000;
+    min-height: 414px;
+
+    .banner_photo_video_container > h2 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 42px;
+        text-align: center;
+        color: #FFF;
+        margin-bottom: 15px;
+    }
+
+    .banner_photo_video_container > p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #C0C0C0;
+        margin-bottom: 22px;
+    }
+
+    .banner_photo_video_container > button {
+            width: 154px;
+            min-height: 42px;
+            background-color: #FFF;
+            border-radius: 14px;
+            border: none;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: 0.4px;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+    }
+}
