@@ -45,12 +45,12 @@
 
 }
 
-.banner_studio_footer {
+.banner__footer {
         display: flex;
         justify-content: flex-end;
-        margin-top: 40px;
+        padding: 40px 0;
 
-    .banner_studio_footer_parameter {
+    .banner__footer_parameter {
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
@@ -62,7 +62,7 @@
 
 }
 
-.banner_studio_footer > svg {
+.banner__footer > svg {
     margin-right: 6px;
 }
 
@@ -83,11 +83,11 @@
         }
     }
 
-    .banner_studio_footer {
+    .banner__footer {
         margin-top: 30px;
     }
 
-    .banner_studio_footer_parameter {
+    .banner__footer_parameter {
         font-size: 10px;
     }
 }
@@ -109,7 +109,7 @@
         }
     }
 
-    .banner_studio_footer {
+    .banner__footer {
         margin-top: 30px;
 
         .banner_parameter_12 {
@@ -127,7 +127,7 @@
             height: 10px;
         }
 
-        .banner_studio_footer_parameter {
+        .banner__footer_parameter {
         font-size: 10px;
         }
 

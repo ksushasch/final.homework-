@@ -3,8 +3,17 @@
     background-image: url(../assets/images/section-sunset.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top center;
     min-height: 600px;
 
+    .banner_mountain_container {
+        display: flex;
+        min-height: 600px;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 70px;
+        align-items: flex-end;
+    }
 
     .banner_mountain_container > h3 {
         font-family: 'Poppins';
@@ -16,7 +25,21 @@
         text-transform: uppercase;
         color: #FFFF
     }
-    
+
+    .banner_mountain_container > p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #C0C0C0;
+        max-width: 298px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
 
 }
 
