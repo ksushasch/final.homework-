@@ -2,4 +2,22 @@
     width: 100%;
     background-image: url(../assets/images/section-sunset.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+
+
+    .banner_mountain_container > h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFF
+    }
+    
+
 }
+
+

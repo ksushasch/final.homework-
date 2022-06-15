@@ -2,8 +2,9 @@
     width: 100%;
     background-image: url(../assets/images/banner.png);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: top center;
+    background-size: cover;
+    min-height: 716px;
     padding: 466px 0 70px 0;
 
     h3 {
@@ -67,7 +68,6 @@
 
 @media (max-width: 1024px) {
     .banner_studio {
-        padding: 340px 0 50px;
 
         h3 {
             font-size: 12px;
@@ -94,7 +94,6 @@
 
 @media (max-width: 768px) {
     .banner_studio {
-        padding: 200px 0 40px;
 
         h3 {
             font-size: 10px;
