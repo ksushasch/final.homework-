@@ -1,3 +1,38 @@
 .banner_leafs {
-    
+    width: 100%;
+    min-height: 600px;
+    background-image: url(/src/assets/images/section-monstera\ leafs.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .banner_leafs_container {
+        display: flex;
+        min-height: 600px;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 70px;
+        align-items: flex-end;
+    }
+
+    .banner_leafs_container > h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .banner_leafs_container > p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #C0C0C0;
+        max-width: 273px;
+    }
 }
+
