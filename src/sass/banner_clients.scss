@@ -20,6 +20,7 @@
             font-style: normal;
             font-weight: 400;
             font-size: 24px;
+            line-height: 30px;
             text-align: center;
             color: #C0C0C0;
         }
@@ -31,4 +32,51 @@
             margin-top: 82px;
         }
 
+}
+
+@media (max-width: 1024px) {
+    .banner_clients {
+        padding: 100px;
+
+        .banner_clients_title > h2 {
+            font-size: 37px;
+            line-height: 39px;
+        }
+
+        .banner_clients_title > p {
+            font-size: 21px;
+            line-height: 27px;
+        }
+
+        .banner_clients_logo > svg {
+            width: 118px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+        .banner_clients {
+            padding: 60px;
+            min-height: 400px;
+
+            .banner_clients_title > h2 {
+                font-size: 33px;
+                line-height: 35px;
+                margin-top: 50px;
+                margin-bottom: 30px;
+            }
+
+            .banner_clients_title > p {
+                font-size: 17px;
+                line-height: 23px;
+            }
+
+            .banner_clients_logo {
+                margin-top: 82px;
+            }
+
+            .banner_clients_logo > svg {
+                width: 90px;
+            }
+        }
 }
