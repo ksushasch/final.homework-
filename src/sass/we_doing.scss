@@ -3,6 +3,15 @@
     padding: 113px 100px 100px;
     background-color: #000000;
 
+    @media (max-width:1024px) {
+        padding: 0 0 30px 0;
+    }
+
+    @media (max-width:768px) {
+        display: flex;
+        flex-direction: column;
+    }
+
     .we_doing_title {
         font-family: 'Poppins';
         font-style: normal;
@@ -12,6 +21,16 @@
         text-align: center;
         color: #FFF;
         margin-bottom: 15px;
+
+        @media (max-width:1024px) {
+            font-size: 37px;
+            line-height: 39px;
+        }
+
+        @media (max-width:768px) {
+            font-size: 33px;
+            line-height: 35px;
+        }
     }
 
     .we_doing_subtitle {
@@ -22,7 +41,17 @@
         line-height: 30px;
         text-align: center;
         color: #C0C0C0;
-        margin-bottom: 42px
+        margin-bottom: 42px;
+
+        @media (max-width:1024px) {
+            font-size: 21px;
+            line-height: 28px;
+        }
+
+        @media (max-width:768px) {
+            font-size: 18px;
+            line-height: 26px;
+        }
     }
 
     li {
@@ -35,180 +64,155 @@
         "product architecture"
         "drone wildlife";
         gap: 16px;
+
+        @media (max-width:768px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
 }
+    .we_doing_item {
+        display: flex;
+        align-items: flex-end;
 
-.we_doing_item {
-    display: flex;
-    align-items: flex-end;
-}
-
-.we_doing_container_product {
-    background-image: url(/src/assets/images/list1.png);
-    height: 600px;
-    grid-area: product;
-    max-width: fit-content;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.we_doing_container_architecture {
-    background-image: url(/src/assets/images/list2.png);
-    height: 600px;
-    grid-area: architecture;
-    max-width: fit-content;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.we_doing_container_drone {
-    background-image: url(/src/assets/images/list3.png);
-    height: 600px;
-    grid-area: drone;
-    max-width: fit-content;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.we_doing_container_wildlife {
-    background-image: url(/src/assets/images/list4.png);
-    height: 600px;
-    grid-area: wildlife;
-    max-width: fit-content;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.we_doing_container_description {
-    margin: 30px;
-}
-
-.we_doing_container_description > h3 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #FFF;
-    margin-bottom: 10px;
-}
-
-.we_doing_container_description > p {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #C0C0C0;
-    margin-bottom: 10px;
-}
-
-.we_doing_container_description > button {
-    width: 143px;
-    background-color: #FFF;
-    border-radius: 14px;
-    padding: 5px 10px 5px 4px;
-    border: none;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: 0.4px;
-    color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-button > svg {
-    margin-right: 5px;
-}
-
-@media (max-width: 1024px) {
-    .we_doing {
-        padding: 0 0 30px 0;
-
-        .we_doing_title {
-            font-size: 37px;
-            line-height: 39px;
-        }
-
-        .we_doing_subtitle {
-            font-size: 21px;
-            line-height: 28px;
-        }
-
-        .we_doing_item {
+        @media (max-width:1024px) {
             height: 500px;
         }
-
-        .we_doing_container_description > h3 {
-            font-size: 12px;
-            line-height: 18px;
-        }
-
-        .we_doing_container_description > p {
-            font-size: 12px;
-            line-height: 18px;
-        }
-
-        .we_doing_container_description > button {
-            max-width: 133px;
-            font-size: 13px;
-            line-height: 18px;
-        }
-
     }
-}
 
-@media (max-width: 768px) {
-    .we_doing {
+    .we_doing_container_product {
+        background-image: url(/src/assets/images/list1.png);
+        height: 600px;
+        grid-area: product;
+        max-width: fit-content;
+        background-repeat: no-repeat;
+        background-size: cover;
 
-            display: flex;
-            flex-direction: column;
-
-        .we_doing_container {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .we_doing_title {
-            font-size: 33px;
-            line-height: 35px;
-        }
-
-        .we_doing_subtitle {
-            font-size: 18px;
-            line-height: 26px;
-        }
-
-        .we_doing_item {
+        @media (max-width:768px) {
             height: 400px;
             max-width: none;
         }
+    }
 
-        .we_doing_container_description > h3 {
+    .we_doing_container_architecture {
+        background-image: url(/src/assets/images/list2.png);
+        height: 600px;
+        grid-area: architecture;
+        max-width: fit-content;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media (max-width:768px) {
+            height: 400px;
+            max-width: none;
+        }
+    }
+
+    .we_doing_container_drone {
+        background-image: url(/src/assets/images/list3.png);
+        height: 600px;
+        grid-area: drone;
+        max-width: fit-content;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media (max-width:768px) {
+            height: 400px;
+            max-width: none;
+        }
+    }
+
+    .we_doing_container_wildlife {
+        background-image: url(/src/assets/images/list4.png);
+        height: 600px;
+        grid-area: wildlife;
+        max-width: fit-content;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media (max-width:768px) {
+            height: 400px;
+            max-width: none;
+        }
+    }
+
+    .we_doing_container_description {
+        margin: 30px;
+    }
+
+    .we_doing_container_description > h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFF;
+        margin-bottom: 10px;
+
+        @media (max-width:1024px) {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        @media (max-width:768px) {
             font-size: 10px;
             line-height: 16px;
         }
+    }
 
-        .we_doing_container_description > p {
+    .we_doing_container_description > p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #C0C0C0;
+        margin-bottom: 10px;
+
+        @media (max-width:1024px) {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        @media (max-width:768px) {
             font-size: 10px;
             line-height: 16px;
         }
+    }
 
-        .we_doing_container_description > button {
+    .we_doing_container_description > button {
+        width: 143px;
+        background-color: #FFF;
+        border-radius: 14px;
+        padding: 5px 10px 5px 4px;
+        border: none;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.4px;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width:1024px) {
             max-width: 125px;
             font-size: 11px;
             line-height: 16px;
         }
 
-}
+        @media (max-width:768px) {
+            max-width: 125px;
+            font-size: 11px;
+            line-height: 16px;
+        }
+    }
 
-    
-
-}
+    button > svg {
+        margin-right: 5px;
+    }

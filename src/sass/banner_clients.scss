@@ -1,8 +1,15 @@
 .banner_clients {
     width: 100%;
-    padding: 120px 120px 100px;
+    padding: 120px 140px;
     background-color: #000;
-    min-height: 500px;
+
+    @media (max-width:1024px) {
+        padding: 113px 90px;
+    }
+
+    @media (max-width:768px) {
+        padding: 90px 50px
+    }
 
         .banner_clients_title > h2 {
             font-family: 'Poppins';
@@ -13,6 +20,16 @@
             text-align: center;
             color: #FFF;
             margin-bottom: 15px;
+
+            @media (max-width: 1024px) {
+                font-size: 36px;
+                line-height: 38px;
+            }
+
+            @media (max-width:768px) {
+                font-size: 30px;
+                line-height: 33px;
+            }
         }
 
         .banner_clients_title > p {
@@ -23,6 +40,16 @@
             line-height: 30px;
             text-align: center;
             color: #C0C0C0;
+
+            @media (max-width: 1024px) {
+                font-size: 22px;
+                line-height: 28px;
+            }
+
+            @media (max-width:768px) {
+                font-size: 17px;
+                line-height: 24px;
+            }
         }
 
         .banner_clients_logo {
@@ -30,53 +57,17 @@
             justify-content: space-between;
             align-items: center;
             margin-top: 82px;
-        }
 
-}
+            svg:not(:last-child) {
+                margin-right: 100px;
 
-@media (max-width: 1024px) {
-    .banner_clients {
-        padding: 100px;
+                @media (max-width:1024px) {
+                    margin-right: 80px;
+                }
 
-        .banner_clients_title > h2 {
-            font-size: 37px;
-            line-height: 39px;
-        }
-
-        .banner_clients_title > p {
-            font-size: 21px;
-            line-height: 27px;
-        }
-
-        .banner_clients_logo > svg {
-            width: 118px;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-        .banner_clients {
-            padding: 60px;
-            min-height: 400px;
-
-            .banner_clients_title > h2 {
-                font-size: 33px;
-                line-height: 35px;
-                margin-top: 50px;
-                margin-bottom: 30px;
-            }
-
-            .banner_clients_title > p {
-                font-size: 17px;
-                line-height: 23px;
-            }
-
-            .banner_clients_logo {
-                margin-top: 82px;
-            }
-
-            .banner_clients_logo > svg {
-                width: 90px;
+                @media (max-width:768px) {
+                    margin-right: 50px;
+                }
             }
         }
 }

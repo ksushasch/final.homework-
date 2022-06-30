@@ -2,7 +2,14 @@
     width: 100%;
     padding: 120px 120px 100px;
     background-color: #000;
-    min-height: 414px;
+
+    @media (max-width: 1024px) {
+        padding: 100px 90px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 90px 70px;
+    }
 
     .banner_photo_video_container > h2 {
         font-family: 'Poppins';
@@ -13,6 +20,16 @@
         text-align: center;
         color: #FFF;
         margin-bottom: 15px;
+
+        @media (max-width: 1024px) {
+            font-size: 36px;
+            line-height: 38px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 22px;
+            line-height: 26px;
+        }
     }
 
     .banner_photo_video_container > p {
@@ -24,6 +41,16 @@
         text-align: center;
         color: #C0C0C0;
         margin-bottom: 22px;
+
+        @media (max-width: 1024px) {
+            font-size: 22px;
+            line-height: 28px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+            line-height: 19px;
+        }
     }
 
     .banner_photo_video_container > button {
@@ -43,53 +70,19 @@
             justify-content: center;
             align-items: center;
             margin: 0 auto;
-    }
-}
 
-@media (max-width: 1024px) {
-    .banner_photo_video {
-        padding: 90px;
-        min-height: 0;
-
-        .banner_photo_video_container > h2 {
-            font-size: 36px;
-            line-height: 38px;
-        }
-
-        .banner_photo_video_container > p {
-            font-size: 20px;
-            line-height: 26px;
-        }
-
-        .banner_photo_video_container > button {
+            @media (max-width:1024px) {
                 width: 144px;
                 min-height: 40px;
                 font-size: 12px;
                 line-height: 16px;
-        }
-    }
-}
+            }
 
-@media (max-width: 768px) {
-    .banner_photo_video {
-        padding: 50px;
-        min-height: 0;
-
-        .banner_photo_video_container > h2 {
-            font-size: 27px;
-            line-height: 30px;
-        }
-
-        .banner_photo_video_container > p {
-            font-size: 15px;
-            line-height: 18px;
-        }
-
-        .banner_photo_video_container > button {
+            @media (max-width:768px) {
                 width: 124px;
                 min-height: 35px;
                 font-size: 10px;
                 line-height: 14px;
-        }
-}
+            }
+    }
 }
